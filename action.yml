@@ -1,0 +1,12 @@
+# action.yml
+name: 'My awesome dotnet project'
+description: 'Hello everybody my name is D0M1N1KUS and welcome to let's play MyAwesomeDotnetProject '
+inputs:
+    description: 'dotnet-dotcover image'
+    required: true
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'thedominikus/dotnet-dotcover3.1:tagname'
